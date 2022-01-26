@@ -1,0 +1,55 @@
+.unselectable {
+  	user-select: none;
+}
+
+html, body, input, textarea, select, button {
+  	font-family: sans-serif;
+  	border-color: #736b5e;
+  	color: #e8e6e3;
+  	background-color: #181a1b;
+}
+
+* {
+  	scrollbar-color: #454a4d #202324;
+}
+
+.fileUpload + label {
+	padding: 2px 4px;
+	font-size: 12.5px;
+}
+
+.btn{
+  	border: 2px solid #736b5e;
+  	border-radius: 3px;
+  	color: white;
+  	transition: 555ms;
+  	cursor: pointer;
+}
+
+.btn:hover{
+  	background: rgb(85, 67, 44);
+}
+
+.btn:active{
+  	transition: 0s;
+  	background: rgb(45, 27, 4);
+}
+
+.windowDrag{
+	position: absolute;
+	padding: 3px 2px 3px 2px;
+	border: 2px solid #736b5e;
+	border-radius: 3px;
+	text-align: center;
+	color: white;
+	background-color: #181a1b;
+	display: none;
+}
+
+.windowDragHeader {
+	padding: 9px 40%;
+	cursor: move;
+	background-color: #181a1b;
+	display: inline-block;
+	vertical-align: middle;
+}
