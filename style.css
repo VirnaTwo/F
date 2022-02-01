@@ -45,6 +45,7 @@ html, body, input, textarea, select, button {
 	background-color: #181a1b;
 	border: solid 3px black;
 	display: none;
+	z-index: 1;
 }
 
 .windowDragHeader {
