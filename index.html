@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr-en">
   <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>El List</title>
+    <title>El List</title>
   </head>
 
   <body onload="init()">
 
-	<div class="windowDrag">
-	  <div class="windowDragHeader btn"></div>
-	  <button class="btn del unselectable" onclick="ToggleSetting()">X</button><p>
-	  <div class="unselectable">
-		<label>Import / Export</label>
-		<input type="file" accept="application/json" name="fileUploadImport" id="fileUploadImport" class="fileUpload" style="display: none;"/>
-		<label for="fileUploadImport" class="btn">Import</label>
-		<button class="btn" onclick="Export()">Export</button>
-	  </div><p>
-	</div>
+    <div class="windowDrag">
+      <div class="windowDragHeader btn"></div>
+      <button class="btn del unselectable" onclick="ToggleSetting()">X</button><p>
+      <div class="unselectable">
+        <input type="file" accept="application/json" name="fileUploadImport" id="fileUploadImport" class="fileUpload" style="display: none;"/>
+        <label for="fileUploadImport" class="btn">Import</label>
+        <button class="btn" onclick="Export()">Export</button>
+      </div><p>
+    </div>
 
-	<input type="text" id="addvalue" class="btn" name="addtolist" autocomplete="true" autofocus="true" placeholder="Text">
+    <input type="text" id="addvalue" class="btn" name="addtolist" autocomplete="true" autofocus="true" placeholder="Text">
 
-	<button id="addvalidebtn" class="btn">Add</button>
-	<button id="settingbtn" class="btn">Setting</button>
+    <button id="addvalidebtn" class="btn">Add</button>
+    <button id="settingbtn" class="btn">Setting</button>
 
-	<div id="list"><p></div>
+    <div id="list"><p></div>
 
-	<script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
