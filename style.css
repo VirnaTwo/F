@@ -5,6 +5,7 @@
 html, body, input, textarea, select, button {
   	color: #e8e6e3;
   	background-color: #181a1b;
+	font-family: sans-serif;
 }
 
 * {
@@ -47,17 +48,18 @@ html, body, input, textarea, select, button {
 }
 
 .windowDragHeader {
-	padding: 8px 34%;
+	padding: 8px 35px;
+	margin: 2px;
 	cursor: move;
 	background-color: #181a1b;
 	display: inline-block;
 	border: double 3px black;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 .ele {
-	font-family: sans-serif;
 	transition: transform 250ms;
+	width: fit-content;
 }
 
 .ele:hover {
@@ -68,4 +70,24 @@ html, body, input, textarea, select, button {
 .ele:active {
 	transition: color 250ms;
 	color: rgb(255, 208, 208);
+}
+
+.removeds {
+	animation: 300ms ease-in-out 0ms 1 normal forwards running removed;
+}
+
+@keyframes removed {
+	from {
+		opacity: 100%;
+		transform: scale(1);
+	}
+	40% {
+		transform: scale(1.1);
+	}
+	80 % {
+	}
+	to {
+		opacity: 0%;
+		transform: scale(0);
+	}
 }

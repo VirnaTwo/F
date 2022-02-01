@@ -50,6 +50,7 @@ function ToggleSetting(ele=document.getElementsByClassName('windowDrag')[0]) {
 	}
 }
 
+
 function UpdateInStorage(){
 	localStorage.setItem("List_", JSON.stringify(List_));
 }
@@ -85,7 +86,9 @@ function AddInHtml(value)
 			else {return true;}
 		})
     	UpdateInStorage()
-    	ele.target.parentElement.remove()
+
+		ele.target.parentElement.classList += " removeds"
+		setTimeout(() => {ele.target.parentElement.remove()}, 300);
   	})
 }
 
