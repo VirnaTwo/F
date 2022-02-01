@@ -9,7 +9,7 @@ html, body, input, textarea, select, button {
 
 * {
   	scrollbar-color: #454a4d #202324;
-	text-shadow: 0px 0px 5px rgba(134, 134, 134, 0.431)
+	text-shadow: 0px 0px 5px rgba(134, 134, 134, 0.431);
 }
 
 .fileUpload + label {
