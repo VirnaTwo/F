@@ -74,6 +74,7 @@ function AddInHtml(value)
 {
   	let tempNode = document.createElement("div")
   	tempNode.id = value
+	tempNode.className = "ele"
 	tempNode.innerHTML = `<button class="btn del unselectable">X</button><label class="unselectable"> </label><label class="name">${tempNode.id}</label><p>`
 
 	document.getElementById('list').appendChild(tempNode)

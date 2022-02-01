@@ -3,8 +3,6 @@
 }
 
 html, body, input, textarea, select, button {
-  	font-family: sans-serif;
-  	border-color: #736b5e;
   	color: #e8e6e3;
   	background-color: #181a1b;
 }
@@ -55,4 +53,19 @@ html, body, input, textarea, select, button {
 	display: inline-block;
 	border: double 3px black;
 	vertical-align: middle;
+}
+
+.ele {
+	font-family: sans-serif;
+	transition: transform 250ms;
+}
+
+.ele:hover {
+	color: rgb(208, 223, 255);
+	transform: translate(2px, 0px);
+}
+
+.ele:active {
+	transition: color 250ms;
+	color: rgb(255, 208, 208);
 }
