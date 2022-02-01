@@ -52,7 +52,7 @@ html, body, input, textarea, select, button {
 	background-color: #181a1b;
 	display: inline-block;
 	border: double 3px black;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 .ele {
