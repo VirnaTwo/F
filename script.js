@@ -157,6 +157,12 @@ function Export() {
     EleDownload.click();
 }
 
+function RemoveAll() {
+	for (const ele of List_) {
+		document.getElementById(ele).getElementsByClassName('del')[0].click()
+	}
+}
+
 document.addEventListener('keydown', function(event) {
   	if(event.keyCode == "13" && event.target.id == "addvalue"){
     	AddInList(document.getElementById('addvalue').value);
