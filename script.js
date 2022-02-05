@@ -73,7 +73,7 @@ let List_ = ReadFromStorage()
 
 function AddInHtml(value)
 {
-  	let tempNode = document.createElement("div")
+  	let tempNode = document.createElement("dl")
   	tempNode.id = value
 	tempNode.className = "ele"
 	tempNode.innerHTML = `<button class="btn del unselectable">X</button><label class="unselectable"> </label><label class="name">${tempNode.id}</label><p>`

@@ -20,12 +20,12 @@
 
     <div class="windowDrag">
       <div class="windowDragHeader btn"></div>
-      <button class="btn del unselectable" onclick="ToggleSetting()">X</button><p>
+      <button class="btn del unselectable" onclick="ToggleSetting()">X</button><br>
       <div class="unselectable">
         <input type="file" accept="application/json" name="fileUploadImport" id="fileUploadImport" class="fileUpload" style="display: none;"/>
         <label for="fileUploadImport" class="btn">Import</label>
         <button class="btn" onclick="Export()">Export</button>
-      </div><p>
+      </div><br>
       <div class="unselectable">
         <button class="btn" onclick="RemoveAll()">Remove All</button>
       </div>
@@ -36,7 +36,7 @@
     <button id="addvalidebtn" class="btn">Add</button>
     <button id="settingbtn" class="btn">Setting</button>
 
-    <div id="list"><p></div>
+    <dt id="list"></dt>
 
     <script src="script.js"></script>
   </body>
